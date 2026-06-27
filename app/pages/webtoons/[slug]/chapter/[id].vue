@@ -19,7 +19,7 @@ if (!webtoon || !chapter) {
 
 <template>
   <main
-    class="webtoon-reader min-h-screen overflow-x-hidden bg-black text-white"
+    class="webtoon-reader min-h-screen overflow-x-hidden bg-black text-white w-full"
   >
     <header class="mx-auto max-w-[1080px] px-4 py-4">
       <NuxtLink
