@@ -1,0 +1,31 @@
+{
+  "slug": "otruynyy-svit",
+  "title": "Отруйний світ",
+  "description": "Токсичний біопанк-світ, де життя стало товаром.",
+  "cover": "/images/webtoons/otruynyy-svit/cover.webp",
+  "banner": "/images/webtoons/otruynyy-svit/banner.webp",
+
+  "author": "Central",
+  "status": "ongoing",
+  "ageRating": "18+",
+
+  "genres": [
+    "Кіберпанк",
+    "Біопанк",
+    "Драма"
+  ],
+
+  "stats": {
+    "views": 0,
+    "likes": 0
+  },
+
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Глава 1 — Народження",
+      "image": "/images/webtoons/otruynyy-svit/chapters/1.jpg",
+      "publishedAt": "2026-06-27"
+    }
+  ]
+}
