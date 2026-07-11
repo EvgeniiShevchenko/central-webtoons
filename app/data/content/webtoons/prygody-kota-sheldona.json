@@ -1,0 +1,32 @@
+{
+    "slug": "prygody-kota-sheldona",
+    "title": "Пригоди кота Шелдона",
+    "description": "Добрий комедійний вебтун про домашнього кота Шелдона, який досліджує великий світ, сповнений дивних запахів, нових знайомств і несподіваних пригод.",
+    "cover": "/images/webtoons/prygody-kota-sheldona/banner.webp",
+    "banner": "/images/webtoons/prygody-kota-sheldona/banner.webp",
+  
+    "author": "Central",
+    "status": "ongoing",
+    "ageRating": "6+",
+  
+    "genres": [
+      "Комедія",
+      "Повсякденність",
+      "Пригоди",
+      "Тварини"
+    ],
+  
+    "stats": {
+      "views": 0,
+      "likes": 0
+    },
+  
+    "chapters": [
+      {
+        "id": 1,
+        "title": "Глава 1 — Перший вихід на вулицю",
+        "image": "/images/webtoons/prygody-kota-sheldona/chapters/1.jpg",
+        "publishedAt": "2026-07-11"
+      }
+    ]
+  }

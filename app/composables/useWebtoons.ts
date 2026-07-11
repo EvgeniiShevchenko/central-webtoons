@@ -1,6 +1,7 @@
 import otruynyySvit from "@/data/content/webtoons/otruynyy-svit.json";
+import prygodyKotaSheldona from "@/data/content/webtoons/prygody-kota-sheldona.json";
 
-const webtoons = [otruynyySvit];
+const webtoons = [prygodyKotaSheldona, otruynyySvit];
 
 export function useWebtoons() {
   function getWebtoons() {
