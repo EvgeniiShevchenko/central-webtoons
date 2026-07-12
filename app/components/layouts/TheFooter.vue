@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const instagramUrl =
   "https://www.instagram.com/central.kr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
+const email = "centralcoffee27@gmail.com";
 </script>
 
 <template>
@@ -37,6 +38,27 @@ const instagramUrl =
           class="w-44 rounded-2xl border border-white/10 bg-neutral-900 p-3 shadow-xl shadow-black/40"
         />
       </a>
+
+      <section
+        class="mt-8 w-full max-w-3xl rounded-2xl border border-white/10 bg-neutral-900/60 p-8"
+      >
+        <h3 class="text-2xl font-bold text-white">
+          Хочеш опублікувати свій вебтун?
+        </h3>
+
+        <p class="mt-4 text-neutral-400">
+          Central Webtoons — це незалежна платформа для авторських вебтунів.
+          Якщо ти створюєш власні історії та хочеш поділитися ними з читачами —
+          ми будемо раді співпраці.
+        </p>
+
+        <a
+          :href="`mailto:${email}?subject=Співпраця з Central Webtoons`"
+          class="mt-6 inline-flex rounded-xl bg-white px-6 py-3 font-semibold text-black transition hover:scale-105"
+        >
+          Зв'язатися з нами
+        </a>
+      </section>
 
       <a
         :href="instagramUrl"
