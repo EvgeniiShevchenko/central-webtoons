@@ -69,6 +69,15 @@ const email = "centralcoffee27@gmail.com";
         @central.kr
       </a>
 
+      <a
+        href="https://www.tiktok.com/@central.kremen"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-neutral-400 transition hover:text-white"
+      >
+        TikTok
+      </a>
+
       <div class="mt-10 h-px w-full bg-white/5" />
 
       <p class="mt-6 text-sm text-neutral-500">

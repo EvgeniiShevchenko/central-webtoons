@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import TheHeader from "@/components/layouts/TheHeader.vue";
 import TheFooter from "@/components/layouts/TheFooter.vue";
+import BaseLabel from "@/components/base/BaseLabel.vue";
 
 const { getWebtoons } = useWebtoons();
 
@@ -23,15 +24,22 @@ const webtoons = getWebtoons();
           v-for="webtoon in webtoons"
           :key="webtoon.slug"
           :to="`/webtoons/${webtoon.slug}`"
-          class="group overflow-hidden rounded-2xl bg-neutral-900 transition hover:bg-neutral-800 flex flex-col"
+          class="group flex flex-col overflow-hidden rounded-2xl bg-neutral-900 transition hover:bg-neutral-800"
         >
-          <img
-            :src="webtoon.cover"
-            :alt="webtoon.title"
-            class="aspect-[3/4] w-full object-cover transition duration-300 group-hover:scale-105"
-          />
+          <div class="relative">
+            <img
+              :src="webtoon.cover"
+              :alt="webtoon.title"
+              class="aspect-[3/4] w-full object-cover transition duration-300 group-hover:scale-105"
+            />
 
-          <div class="p-4 flex flex-col flex-1">
+            <BaseLabel
+              :text="webtoon.ageRating"
+              class="absolute right-3 top-3"
+            />
+          </div>
+
+          <div class="flex flex-1 flex-col p-4">
             <h2 class="text-xl font-semibold">
               {{ webtoon.title }}
             </h2>
@@ -40,8 +48,8 @@ const webtoons = getWebtoons();
               {{ webtoon.description }}
             </p>
 
-            <div class="mt-auto flex flex-col gap-2 w-full">
-              <p class="line-clamp-2 text-sm text-neutral-400">
+            <div class="mt-auto flex w-full flex-col gap-2">
+              <p class="text-sm text-neutral-400">
                 {{ webtoon.author }}
               </p>
 
