@@ -14,8 +14,16 @@ if (!webtoon.value) {
 </script>
 
 <template>
-  <main class="min-h-screen bg-black px-4 py-8 text-white">
+  <main class="min-h-screen bg-black p-4 text-white">
     <section class="mx-auto max-w-[768px]">
+      <NuxtLink
+        to="/"
+        class="mb-6 inline-flex items-center gap-2 text-neutral-400 transition hover:text-white"
+      >
+        <span>←</span>
+        <span>Назад</span>
+      </NuxtLink>
+
       <img
         :src="webtoon!.cover"
         :alt="webtoon!.title"
@@ -40,7 +48,7 @@ if (!webtoon.value) {
         </span>
       </div>
 
-      <h2 class="mt-10 mb-4 text-xl font-semibold">Глави</h2>
+      <h2 class="mb-4 mt-10 text-xl font-semibold">Глави</h2>
 
       <div class="grid gap-3">
         <NuxtLink
